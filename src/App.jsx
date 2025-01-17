@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import resume from './assets/Kshitij_Pandey_resume.pdf'; 
 const App = () => {
   return (
     <div className="bg-neutral-900 text-white">
@@ -51,18 +51,18 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-[70vh] flex items-center justify-center py-16 px-4">
+      <section id="hero" className="min-h-[50vh] flex items-center justify-center py-16 px-4">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Full Stack Developer</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Hi, I'm Kshitij Pandey</h1>
           <p className="text-xl text-gray-400 mb-8">
-            Crafting robust and scalable web solutions with modern technologies
+            Full Stack Developer
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="#contact"
+              href={resume}download    
               className="bg-blue-500 px-8 py-3 rounded-full hover:bg-blue-600"
             >
-              Get in Touch
+              Download CV
             </a>
             <a
               href="#projects"
@@ -91,29 +91,16 @@ const App = () => {
                   I bridge the gap between frontend aesthetics and backend functionality.
                 </p>
               </div>
-              <div className="bg-neutral-700 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">What I Do</h3>
-                <p className="text-gray-300">
-                  Specializing in React, Node.js, and AWS to deliver performant solutions.
-                </p>
-              </div>
+              
             </div>
             <div className="space-y-6">
-              <div className="bg-neutral-700 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-3">Experience Highlights</h3>
-                <ul className="text-gray-300 list-disc ml-4">
-                  <li>Full Stack Development</li>
-                  <li>Cloud Architecture</li>
-                  <li>Database Management</li>
-                  <li>API Development</li>
-                </ul>
-              </div>
-              <div className="bg-neutral-700 p-6 rounded-lg">
+            <div className="bg-neutral-700 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Current Focus</h3>
                 <p className="text-gray-300">
-                  Building scalable applications with advanced cloud solutions.
+                  Building scalable applications to solve real life problems around me.
                 </p>
               </div>
+             
             </div>
           </div>
         </div>
@@ -169,7 +156,7 @@ const App = () => {
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Cloud Services</h3>
-              <p className="text-gray-300">AWS, Firebase, Docker</p>
+              <p className="text-gray-300">AWS, Snowflake, Docker</p>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">UI / UX</h3>
@@ -195,6 +182,10 @@ const App = () => {
               <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
               <p className="text-gray-300">Socket.io and Firebase integration</p>
             </div>
+            <div className="bg-neutral-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
+              <p className="text-gray-300">Socket.io and Firebase integration</p>
+            </div>
           </div>
         </div>
       </section>
@@ -202,38 +193,29 @@ const App = () => {
       
       {/* Contact Section */}
       <section id="contact" className="bg-neutral-900 py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Contact</h2>
-            <p className="text-gray-400">
-              Interested in working together? Let's connect!
-            </p>
-          </div>
-          <form className="max-w-lg mx-auto space-y-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-4 py-2 rounded-lg bg-neutral-700 text-white focus:ring focus:ring-blue-500"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full px-4 py-2 rounded-lg bg-neutral-700 text-white focus:ring focus:ring-blue-500"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows="5"
-              className="w-full px-4 py-2 rounded-lg bg-neutral-700 text-white focus:ring focus:ring-blue-500"
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold mb-4">Contact</h2>
+        <p className="text-gray-400">
+          Connect with me on these platforms:
+        </p>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+        <a href="https://github.com/pandey22" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github text-4xl text-gray-300 hover:text-white"></i>
+        </a>
+        <a href="https://twitter.com/kshitij_peace" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-twitter text-4xl text-gray-300 hover:text-white"></i>
+        </a>
+        <a href="https://linkedin.com/in/kp250400" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin text-4xl text-gray-300 hover:text-white"></i>
+        </a>
+        <a href="mailto:kshitijpandey25@gmail.com">
+          <i className="fas fa-envelope text-4xl text-gray-300 hover:text-white"></i>
+        </a>
+      </div>
+    </div>
+  </section>
     </div>
   );
 };
