@@ -18,14 +18,14 @@ const App = () => {
               <a href="#about" className="text-gray-300 hover:text-white">
                 About
               </a>
+              <a href="#experience" className="text-gray-300 hover:text-white">
+                Experience
+              </a>
               <a href="#skills" className="text-gray-300 hover:text-white">
                 Skills
               </a>
               <a href="#projects" className="text-gray-300 hover:text-white">
                 Projects
-              </a>
-              <a href="#experience" className="text-gray-300 hover:text-white">
-                Experience
               </a>
               <a href="#contact" className="text-gray-300 hover:text-white">
                 Contact
@@ -53,8 +53,8 @@ const App = () => {
       {/* Hero Section */}
       <section id="hero" className="min-h-[50vh] flex items-center justify-center py-16 px-4">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Hi, I'm Kshitij Pandey</h1>
-          <p className="text-xl text-gray-400 mb-8">
+          <h1 className="text-4xl md:text-6xl font-bold mb-8 mt-20">Hi, I'm Kshitij Pandey</h1>
+          <p className="text-3xl text-gray-400 mb-8">
             Full Stack Developer
           </p>
           <div className="flex justify-center gap-4">
@@ -83,7 +83,7 @@ const App = () => {
               I'm a passionate Full Stack Developer creating seamless user experiences.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
             <div className="space-y-6">
               <div className="bg-neutral-700 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-3">Who I Am</h3>
@@ -112,7 +112,7 @@ const App = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 text-xl">
             <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Junior Data Engineer Trainee</h3>
               <p className="text-gray-300 font-bold">64 Squares LLC  | July 2024 - Jan 2025</p><br></br>
@@ -123,6 +123,7 @@ const App = () => {
                 <li>Led a team of 5 members in performing log analysis for an Android app using <b>Splunk</b>.</li>
               </ul>
             </div>
+            
           </div>
         </div>
       </section>
@@ -137,28 +138,28 @@ const App = () => {
               Proficient in modern technologies to create impactful solutions.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-neutral-800 p-6 rounded-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center ">
+          <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Languages</h3>
               <p className="text-gray-300">C++, Python, Java</p>
             </div>
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Frontend</h3>
               <p className="text-gray-300">React.js, JavaScript, HTML, CSS</p>
             </div>
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Backend</h3>
               <p className="text-gray-300">Node.js, Express.js, Python</p>
             </div>
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Database</h3>
               <p className="text-gray-300">MongoDB, SQL, Firebase, Supabase</p>
             </div>
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Cloud Services</h3>
               <p className="text-gray-300">AWS, Snowflake, Docker</p>
             </div>
-            <div className="bg-neutral-800 p-6 rounded-lg">
+            <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">UI / UX</h3>
               <p className="text-gray-300">Figma, Canva, v0</p>
             </div>
@@ -168,23 +169,35 @@ const App = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="bg-neutral-800 py-20">
+      <section id="projects" className="bg-neutral-800 py-20 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-neutral-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">E-Commerce Platform</h3>
-              <p className="text-gray-300">Built with React, Node.js, and MongoDB</p>
+              <h3 className="text-xl font-bold mb-2">CUHP APP</h3>
+              <p className="text-gray-300 text-center font-bold mb-6">Tech Stack : Java, Firebase and XML</p>
+              <p className="text-gray-300 text-center">An Android CMS app built for Central University of Himachal Pradesh</p>
+              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
+              <a href="https://github.com/pandey22/CUHP-APP-v1.0" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
+              </a>
+
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
               <p className="text-gray-300">Socket.io and Firebase integration</p>
+              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
+              <a href="https://github.com/pandey22/CUHP-APP-v1.0" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
+              </a>
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
               <p className="text-gray-300">Socket.io and Firebase integration</p>
+              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
+              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
             </div>
           </div>
         </div>
