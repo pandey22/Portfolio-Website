@@ -121,6 +121,9 @@ const App = () => {
                 from Label Studio and load it into Snowflake.</li>
                 <li>Designed and developed the landing page in React for the product <b>Data Zapp</b>.</li>
                 <li>Led a team of 5 members in performing log analysis for an Android app using <b>Splunk</b>.</li>
+                
+
+                
               </ul>
             </div>
             
@@ -179,25 +182,29 @@ const App = () => {
               <h3 className="text-xl font-bold mb-2">CUHP APP</h3>
               <p className="text-gray-300 text-center font-bold mb-6">Tech Stack : Java, Firebase and XML</p>
               <p className="text-gray-300 text-center">An Android CMS app built for Central University of Himachal Pradesh</p>
-              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
+              <i className="fa-solid fa-link text-2xl text-gray-300 hover:text-white mt-5 "></i>
               <a href="https://github.com/pandey22/CUHP-APP-v1.0" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
+              <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4"></i>
               </a>
 
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
-              <p className="text-gray-300">Socket.io and Firebase integration</p>
-              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
-              <a href="https://github.com/pandey22/CUHP-APP-v1.0" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
+              <h3 className="text-xl font-bold mb-2">Crypto Tweet Scraping Bot</h3>
+              <p className="text-gray-300 text-center font-bold mb-6">Tech Stack :  TypeScript, Node.js, OpenAI API, Twitter API
+              </p>
+              <p className="text-gray-300">Get buy/sell tips for latest crypto</p>
+              <a href="https://github.com/pandey22/tweetScraping-" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4 mt-5"></i>
               </a>
             </div>
             <div className="bg-neutral-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">Real-Time Chat App</h3>
-              <p className="text-gray-300">Socket.io and Firebase integration</p>
-              <i className="fa-solid fa-link text-xl text-gray-300 hover:text-white mt-5 "></i>
-              <i className="fab fa-github text-xl text-gray-300 hover:text-white ml-4"></i>
+              <h3 className="text-xl font-bold mb-2">Chatfinity</h3>
+              <p className="text-gray-300 text-center font-bold mb-6">Tech Stack :  JavaScript, Node.js, ExpressJS, CSS,HTML
+              </p>
+              <p className="text-gray-300">Real Time Chat Application</p>
+              <a href="https://github.com/pandey22/Chatfinity" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4 mt-5"></i>
+              </a>
             </div>
           </div>
         </div>
