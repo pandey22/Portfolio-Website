@@ -182,9 +182,12 @@ const App = () => {
               <h3 className="text-xl font-bold mb-2">CUHP APP</h3>
               <p className="text-gray-300 text-center font-bold mb-6">Tech Stack : Java, Firebase and XML</p>
               <p className="text-gray-300 text-center">An Android CMS app built for Central University of Himachal Pradesh</p>
-              <i className="fa-solid fa-link text-2xl text-gray-300 hover:text-white mt-5 "></i>
+              
               <a href="https://github.com/pandey22/CUHP-APP-v1.0" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4"></i>
+              </a>
+              <a href="https://www.amazon.com/gp/product/B0DGDGQ2DJ" target="_blank" rel="noopener noreferrer">
+              <i className="fa-solid fa-link text-2xl text-gray-300 hover:text-white mt-5 ml-5 "></i>
               </a>
 
             </div>
