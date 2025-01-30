@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import resume from './assets/Kshitij_Pandey_resume.pdf'; 
+
 const App = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <div className="bg-neutral-900 text-white">
       {/* Navigation */}
@@ -31,7 +38,7 @@ const App = () => {
                 Contact
               </a>
             </div>
-            <button className="md:hidden text-gray-300 hover:text-white">
+            <button className="md:hidden text-gray-300 hover:text-white" onClick={toggleNav}>
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -48,6 +55,31 @@ const App = () => {
             </button>
           </div>
         </div>
+        {/* Mobile Navigation Links */}
+        {isNavOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="#hero" className="block text-gray-300 hover:text-white">
+                Home
+              </a>
+              <a href="#about" className="block text-gray-300 hover:text-white">
+                About
+              </a>
+              <a href="#experience" className="block text-gray-300 hover:text-white">
+                Experience
+              </a>
+              <a href="#skills" className="block text-gray-300 hover:text-white">
+                Skills
+              </a>
+              <a href="#projects" className="block text-gray-300 hover:text-white">
+                Projects
+              </a>
+              <a href="#contact" className="block text-gray-300 hover:text-white">
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -121,16 +153,11 @@ const App = () => {
                 from Label Studio and load it into Snowflake.</li>
                 <li>Designed and developed the landing page in React for the product <b>Data Zapp</b>.</li>
                 <li>Led a team of 5 members in performing log analysis for an Android app using <b>Splunk</b>.</li>
-                
-
-                
               </ul>
             </div>
-            
           </div>
         </div>
       </section>
-
 
       {/* Skills Section */}
       <section id="skills" className="bg-neutral-900 py-20">
@@ -166,7 +193,6 @@ const App = () => {
               <h3 className="text-xl font-bold mb-4">UI / UX</h3>
               <p className="text-gray-300">Figma, Canva, v0</p>
             </div>
-            
           </div>
         </div>
       </section>
@@ -178,6 +204,19 @@ const App = () => {
             <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-neutral-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">J.A.W.S Website</h3>
+              <p className="text-gray-300 text-center font-bold mb-6">Tech Stack : React, Typescript and Tailwind</p>
+              <p className="text-gray-300 text-center">Official Website of Jharkhand Animal Welfare Society</p>
+              
+              <a href="https://github.com/pandey22/Jaws-Website" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4"></i>
+              </a>
+              <a href="https://jaws-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <i className="fa-solid fa-link text-2xl text-gray-300 hover:text-white mt-5 ml-5 "></i>
+              </a>
+
+            </div>
             <div className="bg-neutral-900 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">CUHP APP</h3>
               <p className="text-gray-300 text-center font-bold mb-6">Tech Stack : Java, Firebase and XML</p>
@@ -200,45 +239,35 @@ const App = () => {
               <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4 mt-5"></i>
               </a>
             </div>
-            <div className="bg-neutral-900 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">Chatfinity</h3>
-              <p className="text-gray-300 text-center font-bold mb-6">Tech Stack :  JavaScript, Node.js, ExpressJS, CSS,HTML
-              </p>
-              <p className="text-gray-300">Real Time Chat Application</p>
-              <a href="https://github.com/pandey22/Chatfinity" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github text-2xl text-gray-300 hover:text-white ml-4 mt-5"></i>
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      
       {/* Contact Section */}
       <section id="contact" className="bg-neutral-900 py-20">
-    <div className="max-w-7xl mx-auto px-4">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Contact</h2>
-        <p className="text-gray-400">
-          Connect with me on these platforms:
-        </p>
-      </div>
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
-        <a href="https://github.com/pandey22" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github text-4xl text-gray-300 hover:text-white"></i>
-        </a>
-        <a href="https://twitter.com/kshitij_peace" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter text-4xl text-gray-300 hover:text-white"></i>
-        </a>
-        <a href="https://linkedin.com/in/kp250400" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin text-4xl text-gray-300 hover:text-white"></i>
-        </a>
-        <a href="mailto:kshitijpandey25@gmail.com">
-          <i className="fas fa-envelope text-4xl text-gray-300 hover:text-white"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Contact</h2>
+            <p className="text-gray-400">
+              Connect with me on these platforms:
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+            <a href="https://github.com/pandey22" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github text-4xl text-gray-300 hover:text-white"></i>
+            </a>
+            <a href="https://twitter.com/kshitij_peace" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter text-4xl text-gray-300 hover:text-white"></i>
+            </a>
+            <a href="https://linkedin.com/in/kp250400" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin text-4xl text-gray-300 hover:text-white"></i>
+            </a>
+            <a href="mailto:kshitijpandey25@gmail.com">
+              <i className="fas fa-envelope text-4xl text-gray-300 hover:text-white"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
