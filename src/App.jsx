@@ -146,6 +146,15 @@ const App = () => {
           </div>
           <div className="space-y-8 text-xl">
             <div className="bg-neutral-800 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Freelance Backend Engineer-Work Trail</h3>
+              <p className="text-gray-300 font-bold">VectorShift  | Jan 2025</p><br></br>
+              <ul className="text-gray-400 list-disc ml-4">
+                <li> Integrated OAuth authentication for <b>HubSpot, Notion, and AirTable,</b> enabling secure API access.</li>
+                <li>Refractored backend services in Python, implementing OAuth token exchange and data retrieval.</li>
+                <li> Implemented <b>API querying</b> and data processing, fetching structured data.</li>
+              </ul>
+            </div>
+            <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Junior Data Engineer Trainee</h3>
               <p className="text-gray-300 font-bold">64 Squares LLC  | July 2024 - Jan 2025</p><br></br>
               <ul className="text-gray-400 list-disc ml-4">
@@ -171,11 +180,11 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center ">
           <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Languages</h3>
-              <p className="text-gray-300">C++, Python, Java</p>
+              <p className="text-gray-300">C++, Python, Java,Typescript</p>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Frontend</h3>
-              <p className="text-gray-300">React.js, JavaScript, HTML, CSS</p>
+              <p className="text-gray-300">React.js, JavaScript, Shadcn, Framer,TailwindCSS</p>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Backend</h3>
