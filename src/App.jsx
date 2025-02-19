@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import resume from './assets/Kshitij_Pandey_resume.pdf'; 
 
 const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -91,7 +90,7 @@ const App = () => {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href={resume}download    
+              href="https://drive.google.com/file/d/1Qn-RJdNunSb7WrEgtP1VPytCuqoC-orZ/view?usp=sharing"
               className="bg-blue-500 px-8 py-3 rounded-full hover:bg-blue-600"
             >
               Download CV
@@ -146,7 +145,7 @@ const App = () => {
           </div>
           <div className="space-y-8 text-xl">
             <div className="bg-neutral-800 p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-2">Freelance Backend Engineer-Work Trail</h3>
+              <h3 className="text-xl font-bold mb-2">Freelance Backend Engineer-Work Trial</h3>
               <p className="text-gray-300 font-bold">VectorShift  | Jan 2025</p><br></br>
               <ul className="text-gray-400 list-disc ml-4">
                 <li> Integrated OAuth authentication for <b>HubSpot, Notion, and AirTable,</b> enabling secure API access.</li>
