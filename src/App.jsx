@@ -143,7 +143,26 @@ const App = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
           </div>
+          
           <div className="space-y-8 text-xl">
+            <div className="bg-neutral-800 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Freelance Software Engineer</h3>
+              <p className="text-gray-300 font-bold">Comini Learning  | Feb 2025 - Mar 2025</p><br></br>
+              <ul className="text-gray-400 list-disc ml-4">
+                <li>Built a full-stack web app with <b>Vue.js, FastAPI, and Firebase</b>, featuring email/password & Google authentication with role-based access control.</li>
+                <li>Developed a student game dashboard & admin panel, implementing real-time database updates, <b>JWT authentication</b>, and secure API communication</li>
+                <li> Created a <b>REST API</b> with FastAPI to handle user authentication, role assignment, and data retrieval.
+                </li>
+              </ul>
+            </div>
+            <div className="bg-neutral-800 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-2">Founding Engineer</h3>
+              <p className="text-gray-300 font-bold">Prospectra AI  | Feb 2025</p><br></br>
+              <ul className="text-gray-400 list-disc ml-4">
+                <li> Developed a data pipeline using <b>Python and Rapid API</b> to fetch real-time data from Twitter, Linkedin and Reddit.</li>
+                <li>Integrated <b>Gemini</b> to generate actionable insights from fetched data.</li>
+                </ul>
+            </div>
             <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Freelance Backend Engineer-Work Trial</h3>
               <p className="text-gray-300 font-bold">VectorShift  | Jan 2025</p><br></br>
@@ -153,6 +172,7 @@ const App = () => {
                 <li> Implemented <b>API querying</b> and data processing, fetching structured data.</li>
               </ul>
             </div>
+            
             <div className="bg-neutral-800 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-2">Junior Data Engineer Trainee</h3>
               <p className="text-gray-300 font-bold">64 Squares LLC  | July 2024 - Jan 2025</p><br></br>
@@ -183,11 +203,11 @@ const App = () => {
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Frontend</h3>
-              <p className="text-gray-300">React.js, JavaScript, Shadcn, Framer,TailwindCSS</p>
+              <p className="text-gray-300">React, Vue, JavaScript, Shadcn, TailwindCSS</p>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Backend</h3>
-              <p className="text-gray-300">Node.js, Express.js, Python</p>
+              <p className="text-gray-300">Node.js, Fast API, Express.js, Python</p>
             </div>
             <div className="bg-neutral-800 p-6 rounded-lg hover:scale-110">
               <h3 className="text-xl font-bold mb-4">Database</h3>
