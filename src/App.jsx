@@ -90,7 +90,7 @@ const App = () => {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://drive.google.com/file/d/1Qn-RJdNunSb7WrEgtP1VPytCuqoC-orZ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ns_c3zSLwXYFXR1RmGajAWSU2PyvCjlF/view?usp=drive_link"
               className="bg-blue-500 px-8 py-3 rounded-full hover:bg-blue-600"
             >
               Download CV
