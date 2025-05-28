@@ -6,6 +6,57 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kshitij Pandey</title>
+    <!-- Lemlist  -->
+     <script type="text/javascript">
+  (function(l,e,m,p,i,r,e){
+    e={i:true,f:false,t:1000,h:l.document.location.href,u:'https://app.lemlist.com/api/visitors'};
+    r={t:null,i:null};
+    i={k:'taizj2BtHMIVdphrG7NXGAGMJDkENQ6tVm8AVfnG4Fzrj1mEeW8qsmTTqC6PRg+6aUM+yXIqK9QC1rZ1a9vuvA==',t:'tea_8TwEeQPpKLJw6jgu2',o:l.location.origin,u:l.navigator.userAgent,d:0,c:0,p:l.document.location.pathname,r:l.document.location.pathname,q:false};
+    p={i:function(){i.c=0;i.d=0;r.i=l.setInterval(function(){if(!l.document.hidden){i.d+=e.t;}},e.t);},x:function(){
+      i.r=i.p;
+      i.p=l.document.location.pathname;
+      l.fetch(e.u, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: JSON.stringify(i),
+      }).then(function(){
+        if(e.i){
+          e.i=false;
+          l.navigation.addEventListener('navigate', n);
+          l.document.body.addEventListener('click', c);
+          l.addEventListener('beforeunload', u);
+        }
+      });
+    }};
+    m=function(){
+      l.clearTimeout(r.t);
+      l.clearInterval(r.i);
+      r.t=l.setTimeout(function(){p.x();p.i();},e.t);
+    };
+
+    var n=function(){if(!e.i){e.f=true;m();}};
+    var u=function(){i.q=true;typeof l.navigator.sendBeacon==='function'?navigator.sendBeacon(e.u,new Blob([JSON.stringify(i)])):p.x();};
+
+    var c=function(){
+      i.c+=1;
+      if(!e.f && !e.i){
+        l.requestAnimationFrame(function(){
+          if(e.h!==l.document.location.href){
+            e.h=l.document.location.href;
+            m();
+          }
+        });
+      }
+    };
+
+    p.x();
+    p.i();
+    
+  })(window);
+</script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
     <link rel='dns-prefetch' href='//t.visitorqueue.com' style='display: none !important;'/> <script>function vqTrackId(){return '3b3fe9b0-97a3-42ef-9b05-173201b6bfd8';} (function(d, e) { var el = d.createElement(e); el.sa = function(an, av){this.setAttribute(an, av); return this;}; el.sa('id', 'vq_tracking').sa('src', '//t.visitorqueue.com/p/tracking.min.js?id='+vqTrackId()).sa('async', 1).sa('data-id', vqTrackId()); d.getElementsByTagName(e)[0].parentNode.appendChild(el); })(document, 'script'); </script><link rel='stylesheet' type='text/css' href="https://p.visitorqueue.com/styles/3b3fe9b0-97a3-42ef-9b05-173201b6bfd8.css" id='vq_flick_styles'/> <script>function vqTrackPc(){return 1;}</script> <script>(function(d, e) { var el = d.createElement(e); el.sa = function(an, av){this.setAttribute(an, av); return this;}; el.sa('id', 'vq_personalisation').sa('src', '//personalisation.visitorqueue.com/p/personalisation.min.js?id='+vqTrackId()).sa('async', 1).sa('data-id', vqTrackId()); d.getElementsByTagName(e)[0].parentNode.appendChild(el); })(document, 'script'); </script>
 <script id="warmly-script-loader" src="https://opps-widget.getwarmly.com/warmly.js?clientId=11bca08c6fa1976d9d0e5baac91ca5f0" defer></script>    <script>!function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/" + key + "/W6Z57HQYZLOX.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("W6Z57HQYZLOX");}();</script>
